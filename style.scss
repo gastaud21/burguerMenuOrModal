@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// body {
+//   background-color: #232323;
+//   color: #cdcdcd;
+// }
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgb(0, 0, 0, 0.2);
+  border: none;
+  width: 80vw;
+  height: 100%;
+}

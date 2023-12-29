@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <button>Abrir Burguer</button>
+      <dialog>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Configurações</a></li>
+          <li><a href="">Sair</a></li>
+        </ul>
+        <button>fechar</button>
+      </dialog>
+    </nav>
+    <main>
+      <h1>Meu Site</h1>
+      <h5>Descrição do meu site</h5>
+    </main>
+  </body>
+  <script>
+    const button = document.querySelector("button");
+    const burguer = document.querySelector("dialog");
+    button.onclick = () => {
+      burguer.showModal();
+    };
+
+    const fechar = document.querySelector("dialog button");
+    fechar.onclick = () => {
+      burguer.close();
+    };
+  </script>
+</html>
